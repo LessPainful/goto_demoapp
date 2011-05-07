@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="480px" 
+    android:layout_height="730px"
+    android:background="@drawable/background"
     >
+    <!-- It is of course a really, really bad idea to use pixel values for sizes. -->
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:text="Hello!"
+    android:textSize = "18dp"
+	android:textStyle = "bold"
+	android:textColor = "#000000"
     />
     
 	<LinearLayout	
@@ -20,6 +25,9 @@
 			android:layout_height="wrap_content"
 			android:text="Username:"
 			android:layout_marginRight = "4dp"
+			android:textSize = "18dp"
+			android:textColor = "#000000"
+	
 		/>
 		<EditText
 			android:id="@+id/username_edittext"
@@ -36,6 +44,9 @@
 			android:layout_height="wrap_content"
 			android:text="Password:"
 			android:layout_marginRight = "7dp"
+			android:textSize = "18dp"
+			android:textColor = "#000000"
+	
 		/>
 		<EditText
 			android:id="@+id/password_edittext"
@@ -43,11 +54,36 @@
 			android:layout_height="wrap_content"
 			 android:password="true"/>
 	</LinearLayout>
-	
-	<Button
-		android:id = "@+id/login_button"
-		android:layout_width="wrap_content"
+	<TextView
+			android:id = "@+id/error_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight = "4dp"
+			android:textSize = "18dp"
+			android:textColor = "#ff0000"
+			android:layout_marginLeft="90dp"
+		/>
+	<LinearLayout
+		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:text ="Login"/>
+		android:orientation = "horizontal">	
+		<Button	
+			android:id = "@+id/login_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text ="Login"
+			android:layout_marginTop="18dp"
+			android:layout_marginLeft="90dp"/>
+			
+			<Button
+			android:id = "@+id/login_button_slow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text ="Login (slow)"
+			android:layout_marginTop="18dp"
+			android:layout_marginLeft="10dp"/>	
+	</LinearLayout>
+	
+	
 	
 </LinearLayout>
