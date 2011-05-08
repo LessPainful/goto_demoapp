@@ -6,6 +6,7 @@
     android:background="@drawable/background"
     >
 <TextView  
+	android:id="@+id/greeting"
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:text="Welcome"

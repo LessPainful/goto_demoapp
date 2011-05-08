@@ -1,0 +1,5 @@
+#Android generated folders
+bin/
+gen/
+#emacs backup files
+*.*~
