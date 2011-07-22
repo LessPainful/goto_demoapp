@@ -1,6 +1,6 @@
   Feature: Login
   Scenario: Login to the app
-  Given My "SimpleUIApp" app is running
+  Given my app is running
   And I wait for "Hello!" to appear
   Then take picture
   
